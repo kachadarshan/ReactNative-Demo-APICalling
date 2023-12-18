@@ -3,11 +3,6 @@
 
 //this is the GET Methods 
 export const apiGetRequestfetch = async () => {
-
-    // await fetch('https://jsonplaceholder.typicode.com/posts')
-    //     .then((response) => response.json())
-    //     .then((json) => console.log(json));
-
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
     const jsonResponse = await response.json();
     return jsonResponse;
@@ -69,3 +64,57 @@ export const apiDeleteRequestfetch = async () => {
       return newRespponse; 
     
     }
+
+
+//<>>>>>>>>>_______FETCH USING PROMISES
+// useEffect(() => {
+//     fetchDELETErequest()
+//   }, [])
+
+
+//   const fetchGETrequest = () => {
+//     fetch('https://jsonplaceholder.typicode.com/todos')
+//       .then((response) => console.log('Fetch Get Work'))
+//       .catch((error) => console.log(error))
+
+//   }
+
+//   const dataObj = {
+//     id: 11,
+//     name: "Tom Brady",
+//     username: "Brad",
+//     email: "tombrad@asd.com"
+//   }
+
+//   const fetchPOSTrequest = () => {
+//     fetch('https://jsonplaceholder.typicode.com/users', {
+//       method: 'POST',
+//       body: JSON.stringify(dataObj)
+//     })
+//       .then((response) => response.json())
+//       .then((res) => console.log('Fetch POST Work'))
+//       .catch((error) => console.log(error))
+
+//   }
+
+//   const fetchPUTrequest = () => {
+//     fetch('https://jsonplaceholder.typicode.com/users', {
+//       method: 'POST',
+//       body: JSON.stringify(dataObj)
+//     })
+//       .then((response) => response.json())
+//       .then((res) => console.log('Fetch PUt Work'))
+//       .catch((error) => console.log(error))
+
+//   }
+
+//   const fetchDELETErequest = () => {
+//     fetch('https://jsonplaceholder.typicode.com/users/1', {
+//       method: 'POST',
+//       body: JSON.stringify(dataObj)
+//     })
+//       .then((response) => response.json())
+//       .then((res) => console.log('Fetch DELETE Work'))
+//       .catch((error) => console.log(error))
+
+//   }
