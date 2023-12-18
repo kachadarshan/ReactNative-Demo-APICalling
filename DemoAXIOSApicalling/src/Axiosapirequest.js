@@ -2,6 +2,51 @@
 
 import axios from "axios";
 
+//using promises axios api calling
+ // useEffect(() => {
+  //   axiosDELETErequest()
+  // }, [])
+
+  // const dataObj = {
+  //   id: 11,
+  //   name: "Tom Brady",
+  //   username: "Brad",
+  //   email: "tombrad@asd.com",
+  // }
+
+
+  // const axiosGETrequest = () => {
+  //   axios
+  //     .get('https://jsonplaceholder.typicode.com/todos')
+  //     .then((response) => console.log('DKD '))
+  //     .catch((error) => console.log(error))
+
+  // }
+
+  // const axiosPOSTrequest = () => {
+  //   axios
+  //     .post('https://jsonplaceholder.typicode.com/users', dataObj)
+  //     .then((response) => console.log('Post Methods Work'))
+  //     .catch((error) => console.log(error))
+
+  // }
+
+  // //put 
+  // const axiosUPDATErequest = () => {
+  //   axios
+  //     .put('https://jsonplaceholder.typicode.com/users/1', dataObj)
+  //     .then((response) => console.log('Update Methods Work'))
+  //     .catch((error) => console.log(error))
+
+  // }
+
+  // const axiosDELETErequest = () => {
+  //   axios
+  //     .put('https://jsonplaceholder.typicode.com/users/1')
+  //     .then((response) => console.log('DELETE Methods Work'))
+  //     .catch((error) => console.log(error))
+
+  // }
 
 //this is for  GET
 export const axiosGetRequest = async () => {
